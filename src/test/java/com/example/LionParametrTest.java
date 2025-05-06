@@ -16,7 +16,7 @@ public class LionParametrTest {
         this.isHasMane = isHasMane;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Наличие гривы: {0} {1}")
     public static Object[][] getData() {
         return new Object[][]{
                 {"Самец", true},
